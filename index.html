@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apna Store — Apni Shopping, Apna Style</title>
+  <meta name="description" content="Apna Store modern frontend e-commerce store built with HTML CSS and JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topbar">Free shipping on orders over ₹999 <span>•</span> Easy 7-day returns</div>
+
+  <header class="header">
+    <a class="logo" href="#"><span>✦</span> Apna Store</a>
+    <nav class="nav">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#deals">Deals</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">♡<b id="wishCount">0</b></button>
+      <button class="cart-btn" id="cartBtn">🛒 <span>Cart</span><b id="cartCount">0</b></button>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">NEW SEASON • 2026</span>
+        <h1>Everything you love.<br><em>One smart cart.</em></h1>
+        <p>Discover curated tech, fashion, accessories and everyday essentials—designed for modern living.</p>
+        <div class="hero-buttons"><a class="primary-btn" href="#shop">Shop collection →</a><a class="secondary-btn" href="#categories">Explore categories</a></div>
+        <div class="trust"><span>★★★★★</span> Trusted by 10,000+ shoppers</div>
+      </div>
+      <div class="hero-art">
+        <div class="glow"></div><div class="hero-card back"></div>
+        <div class="hero-card main-product"><span class="sale-pill">-25%</span><div class="product-emoji">🎧</div><div class="float-info"><b>AirBeat Pro</b><small>Premium wireless audio</small></div></div>
+        <div class="floating-card"><span>⚡</span><div><b>Fast delivery</b><small>Across India</small></div></div>
+      </div>
+    </section>
+
+    <section class="stats"><div><b>10K+</b><span>Happy customers</span></div><div><b>500+</b><span>Curated products</span></div><div><b>4.8/5</b><span>Average rating</span></div><div><b>24/7</b><span>Customer support</span></div></section>
+
+    <section class="section" id="categories">
+      <div class="section-head"><div><span class="eyebrow">SHOP BY CATEGORY</span><h2>Find your style</h2></div><a href="#shop">View all →</a></div>
+      <div class="categories">
+        <button class="cat-card" data-category="Electronics"><span>🎧</span><b>Electronics</b><small>120+ items</small></button>
+        <button class="cat-card" data-category="Fashion"><span>👟</span><b>Fashion</b><small>180+ items</small></button>
+        <button class="cat-card" data-category="Home"><span>🏠</span><b>Home & Living</b><small>95+ items</small></button>
+        <button class="cat-card" data-category="Beauty"><span>✨</span><b>Beauty</b><small>75+ items</small></button>
+        <button class="cat-card" data-category="Accessories"><span>⌚</span><b>Accessories</b><small>60+ items</small></button>
+      </div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="section-head"><div><span class="eyebrow">OUR PICKS</span><h2>Trending products</h2></div><a href="#shop" id="clearFilter">Clear filter ×</a></div>
+      <div class="shop-tools">
+        <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search products..."></div>
+        <div class="chips" id="chips">
+          <button class="chip active" data-category="All">All</button><button class="chip" data-category="Electronics">Electronics</button><button class="chip" data-category="Fashion">Fashion</button><button class="chip" data-category="Home">Home</button><button class="chip" data-category="Beauty">Beauty</button><button class="chip" data-category="Accessories">Accessories</button>
+        </div>
+        <select id="sortSelect"><option value="featured">Sort: Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="rating">Top Rated</option></select>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty" id="emptyState" hidden><div>🔎</div><h3>No products found</h3><p>Try another search or category.</p></div>
+    </section>
+
+    <section class="deal" id="deals">
+      <div><span class="eyebrow">LIMITED TIME</span><h2>Weekend drop.<br><em>Up to 40% off.</em></h2><p>Fresh picks, limited quantities. Don't miss the next big find.</p><a class="primary-btn" href="#shop">Shop deals →</a></div>
+      <div class="deal-art"><div class="deal-circle">40%<small>OFF</small></div><span>✦</span><span>✧</span></div>
+    </section>
+
+    <section class="section newsletter"><div><span class="eyebrow">STAY IN THE LOOP</span><h2>Get the good stuff first.</h2><p>New drops, exclusive offers and useful shopping inspiration.</p></div><form id="newsletterForm"><input required type="email" placeholder="Your email address"><button class="primary-btn">Subscribe</button></form></section>
+  </main>
+
+  <footer><div class="footer-brand"><a class="logo" href="#"><span>✦</span> Apna Store</a><p>Apni shopping, apna style — thoughtfully curated products for everyday life.</p></div><div><b>Shop</b><a href="#shop">All products</a><a href="#categories">Categories</a><a href="#deals">Deals</a></div><div><b>Help</b><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Contact</a></div><div><b>Follow</b><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">X / Twitter</a></div></footer>
+  <div class="copyright">© 2026 Apna Store. Frontend demo built with HTML, CSS & JavaScript.</div>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer"><div class="drawer-head"><h2>Your Cart</h2><button class="close" data-close="cartDrawer">×</button></div><div id="cartItems"></div><div class="cart-bottom"><div><span>Subtotal</span><strong id="subtotal">₹0</strong></div><small>Taxes and shipping calculated at checkout.</small><button class="primary-btn full" id="checkoutBtn">Checkout →</button></div></aside>
+  <aside class="drawer" id="wishDrawer"><div class="drawer-head"><h2>Wishlist</h2><button class="close" data-close="wishDrawer">×</button></div><div id="wishItems"></div></aside>
+
+  <div class="modal" id="productModal"><button class="modal-close" data-close="productModal">×</button><div id="modalContent"></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
