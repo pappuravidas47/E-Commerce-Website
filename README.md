@@ -1,17 +1,25 @@
 # E-Commerce Website
 
-A modern and responsive e-commerce website frontend built using **HTML, CSS, and JavaScript**. The project provides a clean shopping experience with product browsing, search, category filtering, wishlist, shopping cart, product details, and dark mode.
+A modern and responsive e-commerce website frontend built using **HTML, CSS, and JavaScript**. This project provides a smooth shopping experience with product browsing, search, filtering, wishlist, cart management, product quick view, and dark mode.
 
-## Features
+## 🚀 Live Demo
 
-* 🏠 Modern and responsive homepage
+https://pappuravidas47.github.io/E-Commerce-Website/
+
+## 📸 Preview
+
+![E-Commerce Website Preview](preview.png)
+
+## ✨ Features
+
+* 🏠 Modern homepage
 * 🛍️ Product catalogue
 * 🔍 Product search
 * 🏷️ Category filtering
 * ↕️ Product sorting
 * ❤️ Wishlist functionality
 * 🛒 Add to cart
-* ➕➖ Increase/decrease product quantity
+* ➕➖ Cart quantity controls
 * 🗑️ Remove products from cart
 * 💰 Automatic cart total calculation
 * 💾 LocalStorage support
@@ -21,63 +29,63 @@ A modern and responsive e-commerce website frontend built using **HTML, CSS, and
 * 📧 Newsletter section
 * 🔔 Toast notifications
 * 📱 Fully responsive design
-* ⚡ Interactive user interface
+* ⚡ Smooth and interactive UI
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-* **HTML5**
-* **CSS3**
-* **JavaScript**
-* **LocalStorage**
-* **Google Fonts**
+* HTML5
+* CSS3
+* JavaScript
+* LocalStorage
+* Google Fonts
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
-Apna-Store/
+E-Commerce-Website/
+│
 ├── index.html
+│
 ├── css/
 │   └── style.css
+│
 ├── js/
 │   └── app.js
+│
+├── preview.png
+│
 └── README.md
 ```
 
-## Getting Started
+## ▶️ Run Locally
 
-### 1. Clone the Repository
+1. Download the project.
 
-```bash
-git clone https://github.com/pappuravidas47/Apna-Store.git
-```
+2. Extract the ZIP file.
 
-### 2. Open the Project
+3. Open the **E-Commerce-Website** folder in VS Code.
 
-```bash
-cd Apna-Store
-```
+4. Open `index.html`.
 
-### 3. Run the Website
+5. Right-click on `index.html`.
 
-Open `index.html` directly in your browser.
+6. Select **Open with Live Server**.
 
-For a better development experience, use **Live Server** in VS Code.
+7. The website will open in your browser.
 
-**VS Code → Right Click `index.html` → Open with Live Server**
+## 🔍 Main Functionality
 
-## Main Functionality
+### Search
 
-### 🔍 Search
+Search products using the search bar.
 
-Users can search for products using the search bar.
+### Category Filter
 
-### 🏷️ Category Filter
+Filter products according to different categories.
 
-Products can be filtered according to different categories.
+### Sorting
 
-### ↕️ Sorting
-
-Products can be sorted based on:
+Products can be sorted by:
 
 * Featured
 * Price: Low to High
@@ -86,73 +94,72 @@ Products can be sorted based on:
 
 ### ❤️ Wishlist
 
-Users can add or remove products from their wishlist. Wishlist data is stored using browser LocalStorage.
+Add or remove products from the wishlist. Wishlist data is stored using LocalStorage.
 
 ### 🛒 Shopping Cart
 
 Users can:
 
-* Add products to the cart
-* Increase product quantity
-* Decrease product quantity
+* Add products
+* Increase quantity
+* Decrease quantity
 * Remove products
 * View cart items
-* Calculate the total price
+* Calculate total price
 
-Cart information is stored in **LocalStorage**, so the cart remains available after refreshing the page.
+Cart data is saved in **LocalStorage**.
 
 ### 🌙 Dark Mode
 
-The website includes a dark mode option for a better browsing experience. The selected theme is saved using LocalStorage.
+Switch between light and dark themes. The selected theme is saved using LocalStorage.
 
 ### 👀 Product Quick View
 
-Users can quickly view product information without leaving the current page.
+View product information quickly without leaving the current page.
 
-## Responsive Design
+## 📱 Responsive Design
 
-The website is designed to work across:
+The website is optimized for:
 
 * 💻 Desktop
 * 💻 Laptop
 * 📱 Mobile
 * 📟 Tablet
 
-## Future Improvements
+## 🔮 Future Improvements
 
 * User authentication
 * User registration and login
 * User profile
 * Product reviews and ratings
 * Product details page
-* Order management
 * Checkout system
 * Online payment integration
+* Order management
+* Order history
 * Admin dashboard
 * Seller dashboard
 * Backend API
 * MongoDB database
-* User order history
-* Real-time order tracking
-* Email notifications
 * MERN Stack implementation
 
-## Disclaimer
+## ⚠️ Disclaimer
 
 This project is created for **learning, practice, and portfolio purposes**.
 
 It is currently a **frontend-only e-commerce website** and does not process real payments or real orders.
 
-## Author
+## 👨‍💻 Credits
 
-**Pappu Kumar Ravidas**
+Made with ❤️ by **Pappu Kumar Ravidas**
 
-Computer Science & Engineering Student
+🎓 B.Tech CSE Student
+💻 Future Software Developer | Frontend Enthusiast
 
-### GitHub
+## ⭐ Support
 
-`pappuravidas47`
+If you like this project, please consider giving it a ⭐ **star** on GitHub!
 
 ---
 
-⭐ If you like this project, consider giving the repository a star.
+**© 2026 Pappu Kumar Ravidas**
